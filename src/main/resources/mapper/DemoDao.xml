@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenx.dao.DemoDao">
+    <insert id="insertUser" parameterType="com.chenx.entity.User">
+        insert into user(name, age) values(#{user.name}, ${user.age})
+    </insert>
+
+    <select id="selectUser" resultType="com.chenx.entity.User">
+        select * from user;
+    </select>
+</mapper>

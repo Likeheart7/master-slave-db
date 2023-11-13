@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    master:
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/demo_master?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    slave:
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/demo_slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+DB_RW_SEPARATE_SWITCH: true
